@@ -1,4 +1,10 @@
 <resources>
-    <string name="app_name">Conta</string>
+    <string name="app_name">Calculadora</string>
+    <string name="pi_altura">Digite a altura</string>
+    <string name="pId_altura">Digite altura</string>
+    <string name="btn_calcPesoIdeal">Calcular</string>
+    <string name="pId_resultado"/>
+    <string name="rdBtn_feminino">Feminino</string>
+    <string name="rdBtn_masculino">Masculino</string>
 
 </resources>
