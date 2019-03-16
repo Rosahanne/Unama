@@ -3,8 +3,17 @@
     <string name="pi_altura">Digite a altura</string>
     <string name="pId_altura">Digite altura</string>
     <string name="btn_calcPesoIdeal">Calcular</string>
-    <string name="pId_resultado"/>
+    <string name="pId_resultado" />
     <string name="rdBtn_feminino">Feminino</string>
     <string name="rdBtn_masculino">Masculino</string>
+    <string name="ipL_operadora">Digite a operadora</string>
+    <string name="ipL_tempoLigacao">Digite o tempo da ligação</string>
+    <string name="btn_CalcLig">Calcular Ligação</string>
+    <string-array name="lista_Operadoras">
+        <item>Selecione a operadora</item>
+        <item>Op1</item>
+        <item>Op2</item>
+        <item>Op3</item>
+    </string-array>
 
 </resources>
