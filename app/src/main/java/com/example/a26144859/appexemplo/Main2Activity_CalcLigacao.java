@@ -2,19 +2,23 @@ package com.example.a26144859.appexemplo;
 
 import android.app.Activity;
 import android.support.design.widget.TextInputEditText;
+import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.text.DecimalFormat;
 
 public class Main2Activity_CalcLigacao extends AppCompatActivity {
 
 
     private Spinner spOperadora;
-    private TextInputEditText tempoLigacao;
+    private TextView tempoLigacao;
     private TextView valorTotal;
     private Button btn_calcularLigacao;
 
@@ -24,9 +28,9 @@ public class Main2Activity_CalcLigacao extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2__calc_ligacao);
 
-
-        tempoLigacao = findViewById(R.id.ipL_tempoLigacao);
-        valorTotal = findViewById(R.id.txt_ValorTotal);
+        spOperadora = findViewById(R.id.spinner_op);
+        tempoLigacao = findViewById(R.id.tempLigacao);
+        valorTotal = findViewById(R.id.txt_valorTotal);
         btn_calcularLigacao = findViewById(R.id.btn_CalcLig);
 
 
@@ -36,33 +40,35 @@ public class Main2Activity_CalcLigacao extends AppCompatActivity {
             @Override
 
             public void onClick(View v) {
+                String opEscolhida = spOperadora.getSelectedItem().toString();
+                double tpLigacao = Double.parseDouble(tempoLigacao.getText().toString());
+                double vlTotal=0;
 
+                switch (opEscolhida) {
 
-                if (spOperadora == Op1) {
+                        case "tim":
+                            vlTotal = tpLigacao * 1.20 - 0.10;
+                            break;
 
-                }
+                        case "claro":
+                            vlTotal = tpLigacao * 1.50 - 0.095;
+                            break;
 
-
-
-
+                        case "vivo":
+                            vlTotal = tpLigacao * 1.14 - 0.125;
+                            break;
+                    }
+                String texto = "Valor a pagar é: " + vlTotal;
+                valorTotal.setText(texto);
             }
+
+
+
+
 
         });
 
-        private void carregaSpinner(Activity Main2Activity_CalcLigacao){
-            spOperadora = findViewById(R.id.sp_Op);
-            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource
-
-                    (this.activity,R.array.lista_Operadoras,
-
-                            android.R.layout.simple_spinner_item);
-
-            spOperadora.setAdapter(adapter);
-
-        }
-
 
     }
-
-
 }
+

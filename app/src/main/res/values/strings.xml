@@ -9,11 +9,14 @@
     <string name="ipL_operadora">Digite a operadora</string>
     <string name="ipL_tempoLigacao">Digite o tempo da ligação</string>
     <string name="btn_CalcLig">Calcular Ligação</string>
+    <string name="tp_lig">Informe o tempo da ligação</string>
+    <string name="vlTot">valor total a pagar</string>
+    <string name="calcVlLig">Calcular valor a pagar</string>
     <string-array name="lista_Operadoras">
         <item>Selecione a operadora</item>
-        <item>Op1</item>
-        <item>Op2</item>
-        <item>Op3</item>
+        <item>tim</item>
+        <item>claro</item>
+        <item>vivo</item>
     </string-array>
 
 </resources>

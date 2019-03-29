@@ -6,71 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".Main2Activity_CalcLigacao">
 
-    <Spinner
-        android:id="@+id/sp_Op"
-        android:layout_width="219dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:entries="@array/lista_Operadoras"
-        android:spinnerMode="dialog"
+    <Button
+        android:id="@+id/btn_CalcLig"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/btn_CalcLig"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/tempLigacao"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/tempLigacao"
+        app:layout_constraintTop_toBottomOf="@+id/tempLigacao"
+        tools:text="@string/calcVlLig" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout4"
-        android:layout_width="221dp"
+    <Spinner
+        android:id="@+id/spinner_op"
+        android:layout_width="219dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/ipL_tempoLigacao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/ipL_tempoLigacao" />
-    </android.support.design.widget.TextInputLayout>
-
-    <TextView
-        android:id="@+id/txt_ValorTotal"
-        android:layout_width="150dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="269dp"
-        android:text="TextView"
+        android:entries="@array/lista_Operadoras"
+        android:spinnerMode="dialog"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_CalcLig"
+    <EditText
+        android:id="@+id/tempLigacao"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/tp_lig"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_op"
+        app:layout_constraintStart_toStartOf="@+id/spinner_op"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_op" />
+
+    <EditText
+        android:id="@+id/txt_valorTotal"
         android:layout_width="wrap_content"
-        android:layout_height="42dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="288dp"
-        android:text="@string/btn_CalcLig"
-        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txt_ValorTotal"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_CalcLig"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_CalcLig"
+        app:layout_constraintTop_toBottomOf="@+id/btn_CalcLig"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
