@@ -17,12 +17,12 @@
         tools:layout_editor_absoluteX="19dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_compartilhar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Button"
+        android:text="Compartilhar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/txtGastoViagem2"
         app:layout_constraintStart_toStartOf="@+id/txtGastoViagem2"
