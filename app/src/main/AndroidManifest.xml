@@ -11,8 +11,22 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".Calc_Volume" />
-        <activity android:name=".PesoIdeal"></activity>
+        <activity android:name=".PesoIdeal" />
         <activity android:name=".Main2Activity_CalcLigacao">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GastoViagem">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GastoViagem2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

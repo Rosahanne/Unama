@@ -16,12 +16,10 @@ import java.text.DecimalFormat;
 
 public class Main2Activity_CalcLigacao extends AppCompatActivity {
 
-
     private Spinner spOperadora;
     private TextView tempoLigacao;
     private TextView valorTotal;
     private Button btn_calcularLigacao;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +30,6 @@ public class Main2Activity_CalcLigacao extends AppCompatActivity {
         tempoLigacao = findViewById(R.id.tempLigacao);
         valorTotal = findViewById(R.id.txt_valorTotal);
         btn_calcularLigacao = findViewById(R.id.btn_CalcLig);
-
-
 
         btn_calcularLigacao.setOnClickListener(new View.OnClickListener() {
 
@@ -61,14 +57,7 @@ public class Main2Activity_CalcLigacao extends AppCompatActivity {
                 String texto = "Valor a pagar é: " + vlTotal;
                 valorTotal.setText(texto);
             }
-
-
-
-
-
         });
-
-
     }
 }
 
