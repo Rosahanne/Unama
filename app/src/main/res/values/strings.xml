@@ -21,7 +21,9 @@
     <string name="btn_calcPesoPlaneta">calcPesoPlaneta</string>
     <string name="p_naterra">Digite o seu peso na terra</string>
     <string name="numX">Digite o número</string>
-
+    <string name="nomeAluno">Digite o nome</string>
+    <string name="av1">Digite a nota da AV1</string>
+    <string name="av2">Digite a nota da AV2</string>
 
 
 </resources>

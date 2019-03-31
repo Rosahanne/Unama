@@ -21,9 +21,11 @@
         <activity android:name=".GastoViagem" />
         <activity android:name=".GastoViagem2" />
         <activity android:name=".CalcPesoPlaneta" />
-        <activity android:name=".CalcValorY">
+        <activity android:name=".CalcValorY" />
+        <activity android:name=".CalcMedia">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
