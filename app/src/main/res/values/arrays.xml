@@ -17,5 +17,6 @@
             <item>Saturno</item>
             <item>Urano</item>
         </string-array>
+    <string-array name="sp_planetas">sp_planetas</string-array>
 
 </resources>

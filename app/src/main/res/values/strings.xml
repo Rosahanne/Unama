@@ -20,6 +20,8 @@
     <string name="p_terra">p_terra</string>
     <string name="btn_calcPesoPlaneta">calcPesoPlaneta</string>
     <string name="p_naterra">Digite o seu peso na terra</string>
+    <string name="numX">Digite o número</string>
+
 
 
 </resources>
