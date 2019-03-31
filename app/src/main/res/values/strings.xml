@@ -20,21 +20,7 @@
     <string name="p_terra">p_terra</string>
     <string name="btn_calcPesoPlaneta">calcPesoPlaneta</string>
     <string name="p_naterra">Digite o seu peso na terra</string>
-    <string-array name="lista_Operadoras">Selecione a operadora
-        <item>Selecione a operadora</item>
-        <item>tim</item>
-        <item>claro</item>
-        <item>vivo</item>
-    </string-array>
-    <string-array name="lista_Planetas">Selecione o planeta
-        <item>Selecione o planeta</item>
-        <item>Mercúrio</item>
-        <item>Vênus</item>
-        <item>Marte</item>
-        <item>Júpiter</item>
-        <item>Saturno</item>
-        <item>Urano</item>
-    </string-array>
+
 
 
 </resources>
