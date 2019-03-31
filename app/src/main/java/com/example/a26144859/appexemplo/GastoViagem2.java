@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class GastoViagem2 extends AppCompatActivity {
 
     private TextView texto;
+    private Button compartilhar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class GastoViagem2 extends AppCompatActivity {
         setContentView(R.layout.activity_gasto_viagem2);
 
         texto = findViewById(R.id.txtGastoViagem2);
+        compartilhar = findViewById(R.id.btn_compartilhar);
 
         Bundle dados = getIntent().getExtras();
         String modelo = dados.getString("modeloAuto");
@@ -27,6 +29,22 @@ public class GastoViagem2 extends AppCompatActivity {
         String result = dados.getString("Resultado");
         texto.setText(modelo + " " + potencia + " gasta " + result + " ao percorrer a distância de: " + distancia+ " Km " + "ao valor de: " + litrovalor + " de combustível");
 
+        compartilhar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( Intent.ACTION_SEND );
+
+                intent.setType( "text/plain" );
+
+                intent.putExtra( Intent.EXTRA_SUBJECT, "Assunto" );
+
+                intent.putExtra( Intent.EXTRA_TEXT, "texto" );
+
+                startActivity( Intent.createChooser( intent,
+                        "Compartilhar..."));
+
+            }
+        });
 
 
 

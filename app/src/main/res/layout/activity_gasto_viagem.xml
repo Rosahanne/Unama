@@ -7,37 +7,15 @@
     tools:context=".GastoViagem">
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:counterTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:errorTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:hintTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/ip_PotMotor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/potenciaMotor"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:visibility="visible" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout4"
-        android:layout_width="197dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/model_veiculo"
         app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Caption"
         app:counterTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:errorTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:hintTextAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:errorTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -46,54 +24,75 @@
             android:id="@+id/ip_ModAuto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/model_veiculo"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/potenciaMotor"
+        app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:counterTextAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:errorTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/ip_PotMotor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:visibility="visible" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="241dp"
+        android:layout_height="56dp"
         android:layout_marginTop="8dp"
         android:hint="@string/distanciaKM"
         app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Caption"
         app:counterTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:errorTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:hintTextAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:errorTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/ip_DistKm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/distanciaKM"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:visibility="visible" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout7"
-        android:layout_width="99dp"
-        android:layout_height="43dp"
+        android:layout_width="233dp"
+        android:layout_height="61dp"
         android:layout_marginTop="8dp"
+        android:hint="@string/litroGasolina"
         app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Caption"
         app:counterTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:errorTextAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:hintTextAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:errorTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/ip_LitGasolina"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/litroGasolina"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:visibility="visible" />
     </android.support.design.widget.TextInputLayout>
 
@@ -108,13 +107,15 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="24dp"
         android:contentDescription="Calcular"
+        android:text="@string/calcular_autonomia"
         android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:textColor="@color/colorPrimary"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.027"
         tools:text="@string/calcular_autonomia" />
 
 </android.support.constraint.ConstraintLayout>
