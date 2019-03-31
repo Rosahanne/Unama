@@ -6,55 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".CalcPesoPlaneta">
 
-    <EditText
-        android:id="@+id/p_naterra"
-        android:layout_width="245dp"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="267dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/p_naterra"
-        android:inputType="numberDecimal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/p_naTerra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/p_naterra"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </android.support.design.widget.TextInputLayout>
 
     <Spinner
-        android:id="@+id/sp_planeta"
-        android:layout_width="191dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="12dp"
-        android:entries="@array/sp_planetas"
-        android:spinnerMode="dialog"
+        android:id="@+id/spinner_planet"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:entries="@array/lista_Planetas"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/p_naterra"
-        app:layout_constraintStart_toStartOf="@+id/p_naterra"
-        app:layout_constraintTop_toBottomOf="@+id/p_naterra" />
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
 
     <Button
-        android:id="@+id/btn_calcularpeso"
+        android:id="@+id/calculoPeso"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:hint="@string/btn_calcPesoPlaneta"
-        android:text="@string/btn_calcPesoPlaneta"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="@+id/sp_planeta"
-        app:layout_constraintStart_toStartOf="@+id/sp_planeta"
-        app:layout_constraintTop_toBottomOf="@+id/sp_planeta"
-        tools:text="Calcular Peso" />
+        android:layout_height="49dp"
+        android:text="Calcular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_planet"
+        app:layout_constraintStart_toStartOf="@+id/spinner_planet"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_planet" />
 
     <TextView
-        android:id="@+id/res_pesoplaneta"
+        android:id="@+id/resultPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="220dp"
-        android:text="TextView"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_calcularpeso"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/btn_calcularpeso"
-        app:layout_constraintTop_toBottomOf="@+id/btn_calcularpeso"
-        app:layout_constraintVertical_bias="0.164" />
-
+        app:layout_constraintEnd_toEndOf="@+id/calculoPeso"
+        app:layout_constraintStart_toStartOf="@+id/calculoPeso"
+        app:layout_constraintTop_toBottomOf="@+id/calculoPeso"
+        app:layout_constraintVertical_bias="0.089" />
 </android.support.constraint.ConstraintLayout>

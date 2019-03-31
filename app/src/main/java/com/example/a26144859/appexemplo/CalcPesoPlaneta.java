@@ -1,8 +1,7 @@
 package com.example.a26144859.appexemplo;
 
-import android.support.design.widget.TextInputEditText;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,29 +10,29 @@ import android.widget.TextView;
 
 public class CalcPesoPlaneta extends AppCompatActivity {
 
-    private EditText pesonaTerra;
-    private Spinner spPlaneta;
-    private Button btnCalcularPeso;
-    private TextView resultPesPlaneta;
-
+    private EditText pesoNaTerra;
+    private Spinner sp_planeta;
+    private Button btn_calcPeso;
+    private TextView resultadoCalculo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_peso_planeta);
 
-        pesonaTerra = findViewById(R.id.p_naterra);
-        spPlaneta = findViewById(R.id.sp_planeta);
-        btnCalcularPeso = findViewById(R.id.btn_calcularpeso);
-        resultPesPlaneta = findViewById(R.id.res_pesoplaneta);
+        pesoNaTerra = findViewById(R.id.p_naTerra);
+        sp_planeta = findViewById((R.id.spinner_planet));
+        btn_calcPeso = findViewById(R.id.calculoPeso);
+        resultadoCalculo = findViewById(R.id.resultPeso);
 
-        btnCalcularPeso.setOnClickListener(new View.OnClickListener() {
+
+        btn_calcPeso.setOnClickListener(new View.OnClickListener() {
 
             @Override
 
             public void onClick(View v) {
-                String opEscolhida = spPlaneta.getSelectedItem().toString();
-                double peso = Double.parseDouble(pesonaTerra.getText().toString());
+                String opEscolhida = sp_planeta.getSelectedItem().toString();
+                double peso = Double.parseDouble(pesoNaTerra.getText().toString());
                 double vlPeso=0;
 
                 switch (opEscolhida) {
@@ -62,9 +61,12 @@ public class CalcPesoPlaneta extends AppCompatActivity {
                         vlPeso = peso/10 * 1.17;
                         break;
                 }
-                String texto = "O seu peso no planeta: " + opEscolhida + "é de: " + vlPeso;
-                resultPesPlaneta.setText(texto);
+                String texto = "O seu peso nesse planeta é de: " + vlPeso;
+                resultadoCalculo.setText(texto);
             }
         });
     }
+
+
 }
+
