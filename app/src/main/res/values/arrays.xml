@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="sp_planetas">Selecione o planeta</string-array>
+
+        <string-array name="lista_Operadoras">Selecione a operadora
+            <item>Selecione a operadora</item>
+            <item>tim</item>
+            <item>claro</item>
+            <item>vivo</item>
+        </string-array>
+
+        <string-array name="lista_Planetas">Selecione o planeta
+            <item>Selecione o planeta</item>
+            <item>Mercúrio</item>
+            <item>Vênus</item>
+            <item>Marte</item>
+            <item>Júpiter</item>
+            <item>Saturno</item>
+            <item>Urano</item>
+        </string-array>
+
 </resources>
