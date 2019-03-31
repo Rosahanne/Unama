@@ -9,23 +9,12 @@
     <TextView
         android:id="@+id/txtGastoViagem2"
         android:layout_width="349dp"
-        android:layout_height="142dp"
+        android:layout_height="139dp"
         android:layout_marginTop="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:visibility="visible"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="19dp" />
+        tools:layout_editor_absoluteX="29dp" />
 
-    <Button
-        android:id="@+id/btn_compartilhar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Compartilhar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/txtGastoViagem2"
-        app:layout_constraintStart_toStartOf="@+id/txtGastoViagem2"
-        app:layout_constraintTop_toBottomOf="@+id/txtGastoViagem2"
-        app:layout_constraintVertical_bias="0.083" />
+
 </android.support.constraint.ConstraintLayout>

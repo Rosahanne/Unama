@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.text.DecimalFormat;
 
@@ -13,8 +15,7 @@ public class GastoViagem extends AppCompatActivity {
     private TextInputEditText distanciaKm;
     private TextInputEditText potenciaMot;
     private TextInputEditText litroGasol;
-    private double resultado;
-
+    private Button calcular;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,40 +26,43 @@ public class GastoViagem extends AppCompatActivity {
         distanciaKm = findViewById(R.id.ip_DistKm);
         potenciaMot = findViewById(R.id.ip_PotMotor);
         litroGasol = findViewById(R.id.ip_LitGasolina);
+        calcular = findViewById(R.id.button_calcular);
 
+        calcular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        public void AcaoBotao(View acao){
-            double distancia = Double.parseDouble(distanciaKm.getText().toString());
-            double pontecia = Double.parseDouble(potenciaMot.getText().toString());
-            double litroValor = Double.parseDouble(litroGasol.getText().toString());
-            double calculo;
+                double distancia = Double.parseDouble(distanciaKm.getText().toString());
+                double potencia = Double.parseDouble(potenciaMot.getText().toString());
+                double litroValor = Double.parseDouble(litroGasol.getText().toString());
+                double calcPot;
 
-            if (pontecia <= 1.0) {
-                calculo = 13;
-            } else if (pontecia > 1.0 && pontecia < 1.4) {
-                calculo = 11;
-            } else if (pontecia > 1.4 && pontecia < 1.9) {
-                calculo = 9.5;
-            } else {
-                calculo = 7.75;
+                if (potencia <= 1.0) {
+                    calcPot = 13;
+                } else if (potencia > 1.0 && potencia < 1.4) {
+                    calcPot = 11;
+                } else if (potencia > 1.4 && potencia < 1.9) {
+                    calcPot = 9.5;
+                } else {
+                    calcPot = 7.75;
+                }
+
+                double resultado = (calcPot / distancia) * litroValor;
+                DecimalFormat d = new DecimalFormat("00.00");
+                String res = d.format(resultado);
+
+                Intent intent = new Intent(GastoViagem.this,GastoViagem2.class);
+                intent.putExtra("Modelo Auto", modeloAuto.getText().toString());
+                intent.putExtra("Potência do Motor", potenciaMot.getText().toString());
+                intent.putExtra("Distância em Km", distanciaKm.getText().toString());
+                intent.putExtra("Litro de Gasolina", litroGasol.getText().toString());
+                intent.putExtra("Resultado", res);
+                System.out.println(res);
+                startActivity(intent);
+
             }
-
-            resultado = (calculo / distancia) * litroValor;
-            System.out.println(resultado);
-            System.out.println(distancia);
-            System.out.println(litroValor);
-            DecimalFormat d = new DecimalFormat("00.00");
-            String res = d.format(resultado);
+        });
 
 
-            Intent intent = new Intent(this, GastoViagem2.class);
-            intent.putExtra("modeloAuto", modeloAuto.getText().toString());
-            intent.putExtra("potenciaMot", potenciaMot.getText().toString());
-            intent.putExtra("distanciaKm", distanciaKm.getText().toString());
-            intent.putExtra("litroGaso", litroGasol.getText().toString());
-            intent.putExtra("Resultado", res);
-            System.out.println(res);
-            startActivity(intent);
-        }
     }
 }

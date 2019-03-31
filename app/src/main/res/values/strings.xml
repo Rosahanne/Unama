@@ -12,6 +12,11 @@
     <string name="tp_lig">Informe o tempo da ligação</string>
     <string name="vlTot">valor total a pagar</string>
     <string name="calcVlLig">Calcular valor a pagar</string>
+    <string name="model_veiculo">Modelo do veículo</string>
+    <string name="distanciaKM">Distância em KM</string>
+    <string name="potenciaMotor">Potência do motor</string>
+    <string name="litroGasolina">Litro de Gasolina</string>
+    <string name="calcular_autonomia">Calcular</string>
     <string-array name="lista_Operadoras">
         <item>Selecione a operadora</item>
         <item>tim</item>
