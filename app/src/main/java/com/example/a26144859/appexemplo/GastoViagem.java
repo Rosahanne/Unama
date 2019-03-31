@@ -38,16 +38,16 @@ public class GastoViagem extends AppCompatActivity {
                 double calcPot;
 
                 if (potencia <= 1.0) {
-                    calcPot = 13;
-                } else if (potencia > 1.0 && potencia < 1.4) {
-                    calcPot = 11;
-                } else if (potencia > 1.4 && potencia < 1.9) {
-                    calcPot = 9.5;
-                } else {
+                    calcPot = 13.00;
+                } else if (potencia > 1.0 && potencia <= 1.4) {
+                    calcPot = 11.00;
+                } else if (potencia > 1.4 && potencia <= 1.9) {
+                    calcPot = 9.50;
+                } else{
                     calcPot = 7.75;
                 }
 
-                double resultado = (calcPot / distancia) * litroValor;
+                double resultado = (distancia/calcPot) * litroValor;
                 DecimalFormat d = new DecimalFormat("00.00");
                 String res = d.format(resultado);
 

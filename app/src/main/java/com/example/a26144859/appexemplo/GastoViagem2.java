@@ -25,7 +25,7 @@ public class GastoViagem2 extends AppCompatActivity {
         String potencia = dados.getString("potenciaMot");
         String litrovalor = dados.getString("litroGaso");
         String result = dados.getString("Resultado");
-        texto.setText(modelo + " " + potencia + " gasta " + result + " ao percorrer a distância de: " +distancia+ " Km " + litrovalor + "Valor");
+        texto.setText(modelo + " " + potencia + " gasta " + result + " ao percorrer a distância de: " + distancia+ " Km " + "ao valor de: " + litrovalor + " de combustível");
 
 
 
