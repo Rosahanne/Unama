@@ -12,7 +12,6 @@ import android.widget.TextView;
 public class CalcPesoPlaneta extends AppCompatActivity {
 
     private EditText pesonaTerra;
-    private TextView legenda;
     private Spinner spPlaneta;
     private Button btnCalcularPeso;
     private TextView resultPesPlaneta;
@@ -24,7 +23,6 @@ public class CalcPesoPlaneta extends AppCompatActivity {
         setContentView(R.layout.activity_calc_peso_planeta);
 
         pesonaTerra = findViewById(R.id.p_naterra);
-        legenda = findViewById(R.id.sp_legenda);
         spPlaneta = findViewById(R.id.sp_planeta);
         btnCalcularPeso = findViewById(R.id.btn_calcularpeso);
         resultPesPlaneta = findViewById(R.id.res_pesoplaneta);
