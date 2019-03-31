@@ -32,15 +32,17 @@ public class GastoViagem2 extends AppCompatActivity {
         compartilhar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Bundle dados = getIntent().getExtras();
+                texto.setText(dados.getString("modeloAuto") + " " + dados.getString("potenciaMot") + " gasta " + dados.getString("Resultado") + " ao percorrer a distância de: " + dados.getString("distanciaKm")+ " Km " + "ao valor de: " + dados.getString("litroGaso") + " de combustível");
+
+
                 Intent intent = new Intent( Intent.ACTION_SEND );
+                intent.setType("text/plain" );
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Resultado" );
+                intent.putExtra(Intent.EXTRA_TEXT,dados.getString("modeloAuto") + " " + dados.getString("potenciaMot") + " gasta " + dados.getString("Resultado") + " ao percorrer a distância de: " + dados.getString("distanciaKm")+ " Km " + "ao valor de: " + dados.getString("litroGaso") + " de combustível");
 
-                intent.setType( "text/plain" );
-
-                intent.putExtra( Intent.EXTRA_SUBJECT, "Assunto" );
-
-                intent.putExtra( Intent.EXTRA_TEXT, "texto" );
-
-                startActivity( Intent.createChooser( intent,
+                startActivity(Intent.createChooser(intent,
                         "Compartilhar..."));
 
             }
