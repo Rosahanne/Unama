@@ -17,11 +17,23 @@
     <string name="potenciaMotor">Potência do motor</string>
     <string name="litroGasolina">Litro de Gasolina</string>
     <string name="calcular_autonomia">Calcular</string>
+    <string name="p_terra">p_terra</string>
+    <string name="btn_calcPesoPlaneta">calcPesoPlaneta</string>
+    <string name="g_planeta">g_planeta</string>
+    <string name="p_naterra">Digite o seu peso na terrra</string>
     <string-array name="lista_Operadoras">
         <item>Selecione a operadora</item>
         <item>tim</item>
         <item>claro</item>
         <item>vivo</item>
+    </string-array>
+    <string-array name="lista_Planetas">
+        <item>Mercúrio</item>
+        <item>Vênus</item>
+        <item>Marte</item>
+        <item>Júpiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
     </string-array>
 
 </resources>
