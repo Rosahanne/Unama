@@ -52,10 +52,10 @@ public class GastoViagem extends AppCompatActivity {
                 String res = d.format(resultado);
 
                 Intent intent = new Intent(GastoViagem.this,GastoViagem2.class);
-                intent.putExtra("Modelo Auto", modeloAuto.getText().toString());
-                intent.putExtra("Potência do Motor", potenciaMot.getText().toString());
-                intent.putExtra("Distância em Km", distanciaKm.getText().toString());
-                intent.putExtra("Litro de Gasolina", litroGasol.getText().toString());
+                intent.putExtra("modeloAuto", modeloAuto.getText().toString());
+                intent.putExtra("potenciaMot", potenciaMot.getText().toString());
+                intent.putExtra("distanciaKm", distanciaKm.getText().toString());
+                intent.putExtra("litroGaso", litroGasol.getText().toString());
                 intent.putExtra("Resultado", res);
                 System.out.println(res);
                 startActivity(intent);
