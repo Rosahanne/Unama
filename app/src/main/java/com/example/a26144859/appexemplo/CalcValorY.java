@@ -20,7 +20,7 @@ public class CalcValorY extends AppCompatActivity {
         setContentView(R.layout.activity_calc_valor_y);
 
         numero_x = findViewById(R.id.numero_x);
-        btn_calc_y = findViewById(R.id.bt_calc_y);
+        btn_calc_y = findViewById(R.id.b_calcCategoria);
         numero_y = findViewById(R.id.resultadoY);
 
 

@@ -24,6 +24,9 @@
     <string name="nomeAluno">Digite o nome</string>
     <string name="av1">Digite a nota da AV1</string>
     <string name="av2">Digite a nota da AV2</string>
+    <string name="id_nadador">Digite o nome do nadador</string>
+    <string name="idade_nadador">Digite a idade</string>
+    <string name="nomeCliente">Digite o nome</string>
 
 
 </resources>

@@ -28,12 +28,12 @@
         android:layout_width="275dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/bt_calc_y"
-        app:layout_constraintStart_toStartOf="@+id/bt_calc_y"
-        app:layout_constraintTop_toBottomOf="@+id/bt_calc_y" />
+        app:layout_constraintEnd_toEndOf="@+id/b_calcCategoria"
+        app:layout_constraintStart_toStartOf="@+id/b_calcCategoria"
+        app:layout_constraintTop_toBottomOf="@+id/b_calcCategoria" />
 
     <Button
-        android:id="@+id/bt_calc_y"
+        android:id="@+id/b_calcCategoria"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
