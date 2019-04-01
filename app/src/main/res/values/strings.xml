@@ -17,11 +17,16 @@
     <string name="potenciaMotor">Potência do motor</string>
     <string name="litroGasolina">Litro de Gasolina</string>
     <string name="calcular_autonomia">Calcular</string>
-    <string-array name="lista_Operadoras">
-        <item>Selecione a operadora</item>
-        <item>tim</item>
-        <item>claro</item>
-        <item>vivo</item>
-    </string-array>
+    <string name="p_terra">p_terra</string>
+    <string name="btn_calcPesoPlaneta">calcPesoPlaneta</string>
+    <string name="p_naterra">Digite o seu peso na terra</string>
+    <string name="numX">Digite o número</string>
+    <string name="nomeAluno">Digite o nome</string>
+    <string name="av1">Digite a nota da AV1</string>
+    <string name="av2">Digite a nota da AV2</string>
+    <string name="id_nadador">Digite o nome do nadador</string>
+    <string name="idade_nadador">Digite a idade</string>
+    <string name="nomeCliente">Digite o nome</string>
+
 
 </resources>
